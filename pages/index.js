@@ -86,9 +86,6 @@ export async function getStaticProps(ctx) {
   // Use path to determine Webflow path
   let url = get(ctx, `params.path`, [])
   console.log(url)
-  if(!!url[0]){
-    url[0] = "landing-page"
-  }
   url = url.join(`/`)
   if(url.charAt(0) !== `/`){
     url = `/${url}`

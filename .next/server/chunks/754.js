@@ -120,11 +120,6 @@ async function getStaticProps(ctx) {
 
   let url = lodash_get__WEBPACK_IMPORTED_MODULE_5___default()(ctx, `params.path`, []);
   console.log(url);
-
-  if (!!url[0]) {
-    url[0] = "landing-page";
-  }
-
   url = url.join(`/`);
 
   if (url.charAt(0) !== `/`) {
